@@ -15,12 +15,12 @@
         <ul>
             <li><a href="index.html"><img style="width: 45px; margin-left:10px;margin-top: 7px;margin-bottom: 3px;" src="image/icon_truyen.png" alt=""></a></li>
             <li><a style="font-size: 20px;" title="Doc Truyen Online" href="index.html">Doc Truyen Online</a></li>
-            <li class="table-parent">
+            <li class="table-parent" >
                 <a href="#"><i class="fa-solid fa-tags"></i> Thể loại</a>
                 <div class="table-type">
                     <table>
                         <tr>
-                            <td><i class="fa-solid fa-tags"></i><li><a title="Truyện Tiên Hiệp"  href="TruyenTienHiep.html">Tiên Hiệp</a></li></td>
+                            <td><i class="fa-solid fa-tags"></i><li ><a title="Truyện Tiên Hiệp"  href="TruyenTienHiep.html">Tiên Hiệp</a></li></td>
                             <td><i class="fa-solid fa-tags"></i><li><a title="Truyện kiếm hiệp"  href="TruyenKiemHiep.html">Kiếm Hiệp</a></li></td>
                         </tr>
                         <tr>
@@ -34,26 +34,6 @@
                         <tr>
                             <td><i class="fa-solid fa-tags"></i><li><a title="Truyện lịch sử" href="TruyenLichSu.html">Lịch Sử</a></li></td>
                             <td><i class="fa-solid fa-tags"></i><li><a title="Truyện xuyên không" href="TruyenXuyenKhong.html">Xuyên Không</a></li></td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa-solid fa-tags"></i><li><a title="Truyện ma" href="">Truyện Ma</a></li></td>
-                            <td><i class="fa-solid fa-tags"></i><li><a title="Truyện trinh thám" href="">Trinh Thám</a></li></td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa-solid fa-tags"></i><li><a title="Truyện huyền huyễn" href="">Huyền Huyễn</a></li></td>
-                            <td><i class="fa-solid fa-tags"></i><li><a title="Truyện khoa huyễn" href="">Khoa Huyễn</a></li></td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa-solid fa-tags"></i><li><a title="Truyện dị giới" href="">Dị Giới</a></li></td>
-                            <td><i class="fa-solid fa-tags"></i><li><a title="Truyện võng du" href="">Võng Du</a></li></td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa-solid fa-tags"></i><li><a title="Truyện ngắn" href="TruyenNgan.html">Truyện Ngắn</a></li></td>
-                            <td><i class="fa-solid fa-tags"></i><li><a title="Truyện cười" href="">Truyện Cười</a></li></td>
-                        </tr>
-                        <tr>
-                            <td><i class="fa-solid fa-tags"></i><li><a title="Truyện tiểu thuyết" href="">Tiểu Thuyết</a></li></td>
-                            <td><i class="fa-solid fa-tags"></i><li><a title="Review truyện" href="Review.html">Review</a></li></td>
                         </tr>
                     </table>
                 </div>
@@ -80,11 +60,49 @@
                     </table>
                 </div>
             </li>            
-            <li><a title="Đăng Truyện" href=""><i class="fa-solid fa-cloud-arrow-up"></i> Đăng truyện</a></li>
-           <li><input type="searchS" placeholder="Tìm truyện, tác  giả..."><i style="color: black;" class="fas fa-search"></i></li>
-            <li><a title="Đăng Nhập" href=""> <i class="fa-solid fa-user"></i>  Thành viên</a></li>
+            <li><a title="Đăng Truyện" href="Dang-Truyen.html"><i class="fa-solid fa-cloud-arrow-up"></i> Đăng truyện</a></li>
+           <li><input type="search" placeholder="Tìm truyện, tác  giả..."><i style="color: black;" class="fas fa-search"></i></li>
+           <li><a id="memberButton" title="Đăng Nhập" href="#"><i class="fa-solid fa-user"></i>  Thành viên</a></li>
         </ul>
-    </header>
+    </header>  
+    <div class="login-container" id="loginContainer" style="display: none;">
+        <div class="login-box">
+            <div class="login-header">
+                <h2>ĐĂNG NHẬP</h2>
+                <span class="close-btn">&times;</span>
+            </div>
+            <form>
+                <div class="input-container">
+                    <input type="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Vui lòng nhập địa chỉ email hợp lệ.">
+                </div>
+                <div class="input-container">
+                    <input type="password" placeholder="Mật khẩu" required>
+                </div>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Ghi nhớ mật khẩu</label>
+                </div>
+                <button type="submit" class="login-btn"><a href="">Đăng Nhập</a></button>
+                <a href="#" class="forgot-password">Quên mật khẩu?</a>
+            </form>
+            <div class="social-login">
+                <button class="facebook-btn"><a href="https://www.facebook.com/privacy/consent/gdp/?params%5Bapp_id%5D=212174092286047&params%5Bkid_directed_site%5D=false&params%5Blogger_id%5D=%22a32e03a0-c171-4a8b-aca5-2e947786b933%22&params%5Bnext%5D=%22read%22&params%5Bredirect_uri%5D=%22https%3A%5C%2F%5C%2Fdtruyen.net%5C%2Fuser%5C%2Ffblogin%22&params%5Breturn_scopes%5D=false&params%5Bscope%5D=%5B%22public_profile%22%2C%22email%22%5D&params%5Bsteps%5D=%7B%22read%22%3A%5B%22public_profile%22%2C%22email%22%2C%22baseline%22%5D%7D&params%5Btp%5D=%22unspecified%22&params%5Bcui_gk%5D=%22%5BPASS%5D%3A%22&params%5Bis_limited_login_shim%5D=false&source=gdp_delegated">Đăng nhập Facebook</a></button>
+                <button class="google-btn"><i class="fa-brands fa-google"></i><a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=840898549498-aespl6b0dktpdrgssq2qbhv5st1bna7s.apps.googleusercontent.com&scope=openid%20email%20profile&response_type=id_token&gsiwebsdk=gis_attributes&redirect_uri=https%3A%2F%2Fdtruyen.net&response_mode=form_post&origin=https%3A%2F%2Fdtruyen.net&display=popup&prompt=select_account&gis_params=ChNodHRwczovL2R0cnV5ZW4ubmV0EhNodHRwczovL2R0cnV5ZW4ubmV0GAcqFkppMUxFS2ltRGJqcWYwcStKNUJ6bUEySDg0MDg5ODU0OTQ5OC1hZXNwbDZiMGRrdHBkcmdzc3EycWJodjVzdDFibmE3cy5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbTgBQkA2ZTBhOWYwY2JhOWJiMjQ3NWNiN2RkZjc4NzA1YzY2ZGZiOTZiYjI4YTllMmY4N2U5ZGUxNDJmNjMxNDdhZjk1&service=lso&o2v=1&ddm=0&flowName=GeneralOAuthFlow">Đăng nhập</a></button>
+            </div>
+            <div class="social-login">
+                <button class="zalo-btn"><a href="https://oauth.zaloapp.com/v4/permission?app_id=4451847493765530081&redirect_uri=https://zalo.dtruyen.net/zalo.php?code_challenge=6wlyF9-OuSkEzV_FmuXNGInHLuCQuprpcqTw_kfOhNg&state=y1YzN3WfRNrdjzEvES4jmxRz_9PI2c9fduvBG3zFSds">Đăng nhập với Zalo</a></button>
+            </div>
+            <div class="info-box">
+                <p>Dtruyen.com đổi sang Dtruyen.net, các tài khoản và thông tin vẫn dùng thông tin cũ để đăng nhập.</p>
+            </div>
+            <div class="login">
+                <p>Chưa có tài khoản? <a href="#">Đăng Ký</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/Thanh_vien.js"></script>
+    
     <div class="breadcrumb">
         <i class="fa-solid fa-house"></i><a href="index.html">Trang Chủ  </a><i class="fa-solid fa-angle-right"></i><a href="Review.html">   Danh sách truyện hay trên Đọc Truyện Online
         </a>
