@@ -115,7 +115,11 @@ body {
 .facebook-btn:hover {
     background-color: #00aec4;
 }
-
+.facebook-btn a,.google-btn a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
 .google-btn:hover {
     background-color: #cc422c;
 }
