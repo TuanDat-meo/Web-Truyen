@@ -775,6 +775,12 @@ button a:hover{
     margin-right: 5px;
     font-size: 1.5em;
 }
+.right3 a{
+    color: #016eb2;
+}
+.right3 a:hover{
+    text-decoration: underline;
+}
 /*---------right4-------*/
 .right4 {
     margin: 20px ;
