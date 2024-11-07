@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/Doc-truyen.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html"><img style="width: 45px; margin-left:10px;margin-top: 7px;margin-bottom: 3px;" src="image/icon_truyen.png" alt=""></a></li>
+            <li><a style="font-size: 20px;" title="Doc Truyen Online" href="index.html">Doc Truyen Online</a></li>
+            <li class="table-parent" >
+                <a href="#"><i class="fa-solid fa-tags"></i> Thể loại</a>
+                <div class="table-type">
+                    <table>
+                        <tr>
+                            <td><i class="fa-solid fa-tags"></i><li ><a title="Truyện Tiên Hiệp"  href="TruyenTienHiep.html">Tiên Hiệp</a></li></td>
+                            <td><i class="fa-solid fa-tags"></i><li><a title="Truyện kiếm hiệp"  href="TruyenKiemHiep.html">Kiếm Hiệp</a></li></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-tags"></i><li><a title="Truyện ngôn tình" href="TruyenNgonTinh.html">Ngôn Tình</a></li></td>
+                            <td><i class="fa-solid fa-tags"></i><li><a title="Truyện Teen" href="TruyenTeen.html">Truyện Teen</a></li></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-tags"></i><li><a title="Truyện đô thị" href="TruyenDoThi.html">Đô Thị</a></li></td>
+                            <td><i class="fa-solid fa-tags"></i><li><a title="Truyện quân sự" href="TruyenQuanSu.html">Quân Sự</a></li></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-tags"></i><li><a title="Truyện lịch sử" href="TruyenLichSu.html">Lịch Sử</a></li></td>
+                            <td><i class="fa-solid fa-tags"></i><li><a title="Truyện xuyên không" href="TruyenXuyenKhong.html">Xuyên Không</a></li></td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li class="table-parent">
+                <a href=""><i class="fa-sharp fa-solid fa-list-ul"></i> Sắp xếp</a>
+                <div class="table-type">
+                    <table>
+                        <tr>
+                            <td style="color: red;"><i class="fa-solid fa-gem"></i><li><a title="Truyện Dịch" style="color: red;" href="TruyenDichChonLoc.html">Truyện Dịch</a></li></td>
+                            <td><i class="fa-solid fa-arrows-rotate"></i><li><a href="TruyenMoiCapNhat.html">Mới Cập Nhật</a></li></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-cloud-arrow-up"></i><li><a title="Truyện mới đăng" href="TruyenMoiDang.html">Mới Đăng</a></li></td>
+                            <td><i class="fa-regular fa-eye"></i><li><a title="Truyện đọc nhiều" href="TruyenXemNhieu.html">Xem Nhiều</a></li></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-regular fa-thumbs-up"></i><li><a title="Truyện được yêu thích" href="TruyenYeuThich.html">Yêu Thích</a></li></td>
+                            <td><i class="fa-solid fa-signal"></i><li><a title="Truyện full" href="TruyenFull.html">Truyện Full</a></li></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="color: red; text-align: center; vertical-align: middle;"><i class="fa-solid fa-star"></i><li><a title="Truyện sáng tác" style="color: red;" href="">Thành Viên Sáng Tác</a></li></td>
+                        </tr>
+                    </table>
+                </div>
+            </li>            
+            <li><a title="Đăng Truyện" href="Dang-Truyen.html"><i class="fa-solid fa-cloud-arrow-up"></i> Đăng truyện</a></li>
+           <li><input type="search" placeholder="Tìm truyện, tác  giả..."><i style="color: black;" class="fas fa-search"></i></li>
+           <li><a id="memberButton" title="Đăng Nhập" href="#"><i class="fa-solid fa-user"></i>  Thành viên</a></li>
+        </ul>
+    </header>  
+    <div class="login-container" id="loginContainer" style="display: none;">
+        <div class="login-box">
+            <div class="login-header">
+                <h2>ĐĂNG NHẬP</h2>
+                <span class="close-btn">&times;</span>
+            </div>
+            <form>
+                <div class="input-container">
+                    <input type="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Vui lòng nhập địa chỉ email hợp lệ.">
+                </div>
+                <div class="input-container">
+                    <input type="password" placeholder="Mật khẩu" required>
+                </div>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Ghi nhớ mật khẩu</label>
+                </div>
+                <button type="submit" class="login-btn"><a href="">Đăng Nhập</a></button>
+                <a href="#" class="forgot-password">Quên mật khẩu?</a>
+            </form>
+            <div class="social-login">
+                <button class="facebook-btn"><a href="https://www.facebook.com/privacy/consent/gdp/?params%5Bapp_id%5D=212174092286047&params%5Bkid_directed_site%5D=false&params%5Blogger_id%5D=%22a32e03a0-c171-4a8b-aca5-2e947786b933%22&params%5Bnext%5D=%22read%22&params%5Bredirect_uri%5D=%22https%3A%5C%2F%5C%2Fdtruyen.net%5C%2Fuser%5C%2Ffblogin%22&params%5Breturn_scopes%5D=false&params%5Bscope%5D=%5B%22public_profile%22%2C%22email%22%5D&params%5Bsteps%5D=%7B%22read%22%3A%5B%22public_profile%22%2C%22email%22%2C%22baseline%22%5D%7D&params%5Btp%5D=%22unspecified%22&params%5Bcui_gk%5D=%22%5BPASS%5D%3A%22&params%5Bis_limited_login_shim%5D=false&source=gdp_delegated">Đăng nhập Facebook</a></button>
+                <button class="google-btn"><i class="fa-brands fa-google"></i><a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=840898549498-aespl6b0dktpdrgssq2qbhv5st1bna7s.apps.googleusercontent.com&scope=openid%20email%20profile&response_type=id_token&gsiwebsdk=gis_attributes&redirect_uri=https%3A%2F%2Fdtruyen.net&response_mode=form_post&origin=https%3A%2F%2Fdtruyen.net&display=popup&prompt=select_account&gis_params=ChNodHRwczovL2R0cnV5ZW4ubmV0EhNodHRwczovL2R0cnV5ZW4ubmV0GAcqFkppMUxFS2ltRGJqcWYwcStKNUJ6bUEySDg0MDg5ODU0OTQ5OC1hZXNwbDZiMGRrdHBkcmdzc3EycWJodjVzdDFibmE3cy5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbTgBQkA2ZTBhOWYwY2JhOWJiMjQ3NWNiN2RkZjc4NzA1YzY2ZGZiOTZiYjI4YTllMmY4N2U5ZGUxNDJmNjMxNDdhZjk1&service=lso&o2v=1&ddm=0&flowName=GeneralOAuthFlow">Đăng nhập</a></button>
+            </div>
+            <div class="social-login">
+                <button class="zalo-btn"><a href="https://oauth.zaloapp.com/v4/permission?app_id=4451847493765530081&redirect_uri=https://zalo.dtruyen.net/zalo.php?code_challenge=6wlyF9-OuSkEzV_FmuXNGInHLuCQuprpcqTw_kfOhNg&state=y1YzN3WfRNrdjzEvES4jmxRz_9PI2c9fduvBG3zFSds">Đăng nhập với Zalo</a></button>
+            </div>
+            <div class="info-box">
+                <p>Dtruyen.com đổi sang Dtruyen.net, các tài khoản và thông tin vẫn dùng thông tin cũ để đăng nhập.</p>
+            </div>
+            <div class="login">
+                <p>Chưa có tài khoản? <a href="#">Đăng Ký</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="JS/Thanh_vien.js"></script>
+    <section>
+        <div class="breadcrumb">
+            <i class="fa-solid fa-house"></i><a href="index.html">Trang Chủ</a><i class="fa-solid fa-angle-right"></i><a href="#">Truyện Đô Thị</a>
+        </div>
+        <div class="doc-truyen">
+            <div class="heading">
+                <h1><a href="">Yêu Nhầm Chị Hai… Được Nhầm Em Gái</a></h1>
+                <b>Chương 1</b>
+                <p><i class="fa-solid fa-user"></i> LeoAslan</p>
+                <p>17/03/2014</p>
+            </div>
+            <div class="pagination">
+                <button class="btn prev" disabled>‹ Trước</button>
+                <button class="btn middle"><i class="fas fa-list"></i></button>
+                <button class="btn middle"><i class="fas fa-cog"></i></button>
+                <button class="btn next">Sau ›</button>
+            </div>
+            <div class="chapter-content">
+                <p>Mặc cho ông anh tôi đưa ra chẩn đoán rằng Tiểu Mai chỉ là do sợ quá nên mới ngất xỉu, tình trạng này rất thường hay gặp ở những người tâm lí yếu không thể chịu được những tác động thần kinh mạnh mẽ, đặc biệt là đối với nữ giới, nhưng không một ai dám đồng ý với một kết luận của sinh viên y khoa năm nhất. Thế nên mãi cho đến khi vị bác sĩ được mời đến nhà cũng đưa ra kết luận tương tự lão anh tôi thì cả nhà mới thở phào nhẹ nhõm, vã cả mồ hôi vì được một phen hoảng hồn thất vía.</p>
+                
+                <p>- Cảm ơn con nhé, may mà có cô con, chứ không thì…! – Mẹ tôi quay sang nói với Dạ Minh Châu.</p>
+                <br/>
+                - Dạ không có gì đâu cô! – Cô nàng nhoẻn miệng cười rồi tiếp lời. – Xin phép con cũng về luôn, chắc mẹ con cũng đang đợi ở nhà!<br/>
+                <br/>
+                - Ừ, cảm ơn con nhiều, cả lọ hoa nữa! – Mẹ tôi mỉm cười, định cùng cô nàng đi xuống lầu.<br/>
+                <br/>
+                - Mình về nhé, Nam…! – Dạ Minh Châu khẽ nói.<br/>
+                <br/>
+                - Ừ… ừ, cảm ơn nhiều nghen, tui…! – Tôi choàng tỉnh, đứng bật dậy nói rối rít.<br/>
+                <br/>
+                - Hì, ừ! – Khẽ gật đầu, cô nàng đưa mắt nhìn về phía giường có một người đang nằm thêm lần nữa rồi mới quay bước đi xuống cầu thang.<br/>
+                <br/>
+                - Chắc tui cũng về luôn…! – Uyển Nhi cũng đứng dậy, cô nàng nhỏ giọng, ái ngại nhìn tôi.<br/>
+                <br/>
+                - Ừm…, gặp sau…! – Tôi đồng ý một cách bâng quơ, đưa ra lời hẹn cũng rất thẫn thờ.<br/>
+                <br/>
+                - …..! – Uyển Nhi bất thần yên lặng, cô nàng cũng đưa đôi mắt xanh đại dương nhìn về chiếc giường duy nhất trong phòng lúc này rồi mới nhìn tôi đầy ái ngại.<br/>
+                <br/>
+                - Không… không sao đâu, bà đừng lo…! – Tôi nói mà như tự an ủi với chính mình.<br/>
+                <br/>
+                - Ừm, bác sĩ đã nói rồi mà, ông đừng nghĩ nhiều! – Uyển Nhi cười gượng rồi cũng bước qua ngạch cửa, đi về hướng cầu thang xuống nhà dưới.<br/>
+                <br/>
+                Mẹ thì đưa Minh Châu xuống nhà, Uyển Nhi cũng vậy, ba tôi và lão anh thì trước đó đã ngồi ở dưới nói chuyện với vị bác sĩ vừa mời về nhà, người đó cũng là cô ruột của Dạ Minh Châu. Ngay khi mọi người còn sửng sốt chưa biết phải làm gì thì chính Minh Châu đã là người chủ động gọi ngay đến phòng mạch của cô mình và nằng nặc đòi cô phải đến nhà tôi cho bằng được.<br/>
+                <br/>
+                Còn lại một mình, tôi lúc này mới nhanh bước lại phía trong phòng rồi lo lắng ngồi xuống cạnh bên, mắt chăm chú nhìn đăm đăm vào nhân ảnh đang nằm trên giường.<br/>
+                <br/>
+                Tiểu Mai nhắm nghiền mắt nằm an nhiên như đang ngủ chứ chẳng hề giống như đang trong tình trạng bất tỉnh chút nào. Nàng vẫn chưa tỉnh lại kể từ sau khi nãy, tính ra đến giờ cũng đã được gần ba mươi phút. Nhưng nghe nhịp thở tuy khẽ nhưng rất đều của nàng, và cũng được bác sĩ xác nhận là không có gì quá lo lắng nên tôi giờ đây mới có thể ngồi lặng im cạnh bên.<br/>
+                <br/>
+                Nhẹ nắm lấy tay Tiểu Mai, tôi dường như cảm thấy an tâm hơn khi nhận rõ hơi ấm từ tay nàng. Quen nhau đã lâu nhưng giờ đây tôi mới thấy được bản thân mình sẽ ra sao khi vạn nhất Tiểu Mai gặp phải chuyện chẳng lành. Vừa nãy, khi nàng ngã xuống bất tỉnh cũng là lúc tim tôi bị bóp nghẹt lại, đầu óc như bị giáng một nhát búa mạnh mẽ vào người mà đánh tan luôn hình ảnh một Tiểu Mai từ trước đến giờ có sức khỏe khá tốt và luôn tự chăm sóc được bản thân mình.<br/>
+                <br/>
+                Dù rằng chuyện con gái bị xỉu này không phải là hiếm gặp, đến ngay trường tôi thỉnh thoảng trong giờ chào cờ cũng có hiện tượng này. Đó là những khi bọn tôi đang ngồi nghe thầy hiệu trưởng diễn văn thì bất thần ở một góc sân nào đó có những tiếng la nhốn nháo vang lên, rồi một tên con trai sẽ chạy ra, trên tay ôm xốc cô bạn học cùng lớp mà tất tả phóng về hướng phòng y tế. Việc không dừng lại ở đó, sau khi cô bạn gái kia xỉu được một lúc, khiến bầu không khí trang nghiêm của buổi lễ chào cờ đầu tuần được khuấy động lên đầy tiêu cực một chút thì từ một góc sân khác, lại nhộn nhạo hẳn lên. Và rồi lại ở một khoảng sân nữa, rồi vài tên con trai chạy ra, trên tay là cô bạn cùng lớp, cũng hốt hoảng chạy đến phòng y tế.<br/>
+                <br/>
+                Tôi không rõ lắm đó là bệnh gì, do nguyên nhân gì mà lại có vụ “xỉu dây chuyền” thế kia, mà lại xảy ra toàn với con gái trong giờ chào cờ. Nhưng tôi cũng không lấy làm quan tâm lắm vì đến giờ đã qua hai năm học, lớp tôi chẳng có nhỏ nào bị “xỉu dây chuyền”, Tiểu Mai thì lại càng không. Trong mắt tôi, Tiểu Mai luôn là người rất chu toàn với mọi người xung quanh, vậy thì đừng nói gì đến bản thân nàng. Cộng thêm trước giờ tôi cực kì ít thấy nàng bị bệnh lặt vặt, cảm mạo hay nhiễm lạnh thông thường, thế nên trong đầu tôi đã dần tự mặc định rằng Tiểu Mai của tôi có sức khỏe khá tốt.<br/>
+                <br/>
+                Thế nhưng chuyện xảy ra hôm nay, dù là bất ngờ không ai đoán trước được, cũng không thể tránh được nhưng tôi đã dần cảm nhận được rằng Tiểu Mai vẫn là một cô gái liễu yếu đào tơ. Và tôi lại càng lo lắng hơn khi nhận ra đêm qua lúc tôi đón nàng ở sân bay Tân Sơn Nhất, ấn tượng đầu tiên sau vài mươi ngày xa cách của tôi về nàng là nàng có phần gầy đi trông thấy.<br/>
+                <br/>
+                Vậy là sao? Có phải từ trước đến nay tôi đã quá chủ quan, tuy miệng nói rằng yêu Tiểu Mai nhưng bản thân thì vẫn chưa hết lòng, vẫn chưa quan tâm chăm sóc nàng đúng mực? Vừa nãy, tôi đã nhận ra rằng nếu… nếu vạn nhất một ngày Tiểu Mai gặp chuyện chẳng lành, chắc tôi sẽ phát điên lên mất. Giờ đây chỉ là nàng bị xỉu vì sốc tâm lí mà tôi đã hoang mang đến vậy thì sau này, lỡ sau này… sẽ còn thế nào nữa chứ??!!<br/>
+                <br/>
+                Mải suy nghĩ mà tôi không biết rằng mình đang nắm tay Tiểu Mai dần dần chặt hơn, cho đến khi…<br/>
+                <br/>
+                - Anh…! – Một tiếng kêu khe khẽ vang lên.<br/>
+                <br/>
+                Tôi choàng tỉnh mộng, mừng mừng tủi tủi, lắp bắp liên hồi:<br/>
+                <br/>
+                - Em… em tỉnh rồi… rồi à?<br/>
+                <br/>
+                Tiểu Mai chầm chậm mở mắt, rồi nàng vô thức gượng ngồi dậy, ngạc nhiên hỏi:<br/>
+                <br/>
+                - Em sao… lại nằm ở đây?<br/>
+                <br/>
+                - Cứ nằm nghỉ đi…! – Tôi khẽ ấn vai nàng. – Em vừa… xỉu đó!<br/>
+                <br/>
+                - Hơ… sao em lại xỉu? – Nàng ngơ ngác, tròn mắt nhìn tôi.<br/>
+                <br/>
+                - Bác sĩ nói là… em bị sốc, nãy do sợ quá nên xỉu…! – Tôi rầu rĩ đáp, bất giác cảm thấy mình trăm ngàn lần tội đáng muôn chết, vừa đón nàng về nhà hôm qua thì hôm nay đã lại liên lụy đến nàng.<br/>
+                <br/>
+                Tiểu Mai thừ người ra trong giây lát, rồi nàng chợt khẽ cười nhợt nhạt:<br/>
+                <br/>
+                - Ừ… bác sĩ nói đúng đó, em… cũng nghĩ mình vậy!<br/>
+                <br/>
+                Khi ấy, chỉ trong một phần ngàn của giây, tôi chợt nhận thấy có điều gì đó rất không bình thường, nhưng như ánh sáng chợt lóe lên giữa màn đêm dày đặc rồi vụt tắt, tôi không thể nào cắt nghĩa được nỗi lo mơ hồ đó.<br/>
+                <br/>
+                - Hai bác đâu rồi, anh…?<br/>
+                <br/>
+                - Ở dưới nhà, em đang nằm trong phòng anh…!<br/>
+                <br/>
+                - Lúc nãy… em có hơi sợ nên mới… anh có sao không? Có bị… bác trai đánh không? – Tiểu Mai thẫn thờ nhớ lại rồi nàng tất tả nhìn tôi hết một lượt từ đầu trên xuống dưới.<br/>
+                <br/>
+                Thật tình khi ấy tôi chỉ muốn ôm chầm lấy người con gái trước mặt mình mà thôi. Từ đầu đến cuối rõ ràng đều là lỗi của tôi, chính tôi tự nói dối gia đình, tự nằng nặc đòi vào Sài Gòn đón Tiểu Mai để rồi dẫn đến hôm nay liên lụy sang cả nàng. Ấy vậy mà Tiểu Mai không hề trách tôi lấy nửa lời, cũng chẳng quan tâm mình vừa bị ngất đi, mới tỉnh dậy đã quan tâm đến tôi. Thật là… thật là tôi trước đến giờ, đến tận hôm nay vẫn luôn mang theo bên người những món nợ ân tình từ nàng.<br/>
+                <br/>
+                Cố dằn cơn xúc động, tôi cắn môi hỏi:<br/>
+                <br/>
+                - Em… có thấy gì trong người không? Có gì mệt mỏi hay gì không?<br/>
+                <br/>
+                - Chắc là không… hì, giống như tự dưng bị ngủ một giấc mà không được báo trước thôi! – Tiểu Mai lắc đầu đáp.<br/>
+                <br/>
+                Hơi gục đầu xuống giường, tôi rầu rĩ thì thào:<br/>
+                <br/>
+                <br/>
+                <br/>
+                - Anh xin lỗi, tại….!<br/>
+                <br/>
+                - Anh đừng tự trách nữa, em không giận gì đâu! – Vốn thông minh, Tiểu Mai đã hiểu hết ngay những gì tôi định nói và ngắt lời liền.<br/>
+                <br/>
+                - Nhưng…! – Tôi lại thở dài não ruột. – Lỡ em có bề gì thì…!!!!!!<br/>
+                <br/>
+                - Gì chứ? Anh trù em à? – Nàng nghiêng mái đầu, hấp háy mắt.<br/>
+                <br/>
+                - Không… chỉ là… anh thấy lo thôi, khi nãy lúc em xỉu, anh đờ cả người…! – Tôi cười khổ đáp.<br/>
+                <br/>
+                - Em là con gái mà, dĩ nhiên đâu có thần kinh thép như anh được, lúc nãy… lúc nãy có sợ cũng là chuyện hiển nhiên thôi! – Tiểu Mai bĩu môi, khẽ cấu vào tay tôi.<br/>
+                <br/>
+                - Nhưng em vừa mới xỉu đó…, anh chưa từng thấy ai xỉu trước mặt mình đâu, huống hồ gì lại còn là em nữa!<br/>
+                <br/>
+                - Thì… thôi, dù gì em cũng tỉnh lại rồi, cũng không có mệt gì hết, anh đừng lo nữa mà!<br/>
+                <br/>
+                - Nghĩ sao kêu không lo cho được hở trời…!<br/>
+                <br/>
+                Trông cái bộ tôi thở vắn than dài, Tiểu Mai không đành lòng nhìn người yêu mình như vậy nữa nên bèn chuyển chủ đề:<br/>
+                <br/>
+                - Mà chuyện sao rồi? Anh… được ba mẹ tha tội chưa?<br/>
+                <br/>
+                - Em lo chi cái chuyện nhỏ đó vậy ??!! – Tôi thực sự chưng hửng.<br/>
+                <br/>
+                - Người ta muốn biết mà, chứ anh vừa đón người ta về hôm qua, giờ đã… rầu rầu thế này, hứa gì là nghỉ hè gì chứ, sợ có khi ra ngoài chơi cũng bị cấm luôn mất, hứ! – Tiểu Mai phụng phịu, làm bộ dỗi, nhẹ đập tay liên hồi lên vai tôi.<br/>
+                <br/>
+                Lại thở dài (hôm nay tôi thở dài hơi nhiều), tôi nhăn nhó nói:<br/>
+                <br/>
+                - Từ lúc em xỉu tới giờ, anh với ba mẹ chưa nói thêm câu nào hết, cả nhà toàn lo cho em đó!<br/>
+                <br/>
+                - Hi…!<br/>
+                <br/>
+                - Em cười gì đó?<br/>
+                <br/>
+                - Thì thấy vui thôi, được ba mẹ anh lo lắng, em có hơi… thinh thích!<br/>
+                <br/>
+                - Trời đất, ai mà chẳng vậy?!<br/>
+                <br/>
+                - Khác chứ, em xỉu ở nhà anh nè, có anh nè, ba mẹ anh nè, rồi anh Phúc nữa!<br/>
+                <br/>
+                Đến đây thì tôi thật sự không thể hiểu được Tiểu Mai, cảm giác như nàng đón nhận tin mình bị ngất rất bình thản, hoàn toàn không có vẻ gì bàng hoàng sửng sốt như những đứa con gái bị “xỉu dây chuyền” được thông báo tình trạng sau khi tỉnh lại trong phòng y tế.<br/>
+                <br/>
+                Nhưng tôi chưa kịp nói thêm thì ba mẹ tôi đã bước vào phòng.<br/>
+                <br/>
+                - Ơ, bé Mai, con tỉnh rồi?! – Mẹ tôi ngạc nhiên, bà nhanh bước lại gần.<br/>
+                <br/>
+                - Dạ…!!!<br/>
+                <br/>
+                Ba tôi không nói gì, ông lẳng lặng kéo ghế ngồi xuống cạnh bên, đưa mắt… hiền từ (tôi là tôi cực kì hiếm thấy ánh mắt hiền hiền như này của ba) nhìn Tiểu Mai.<br/>
+                <br/>
+                Tiểu Mai vội ngồi thẳng dậy, toan bước xuống giường thì đã bị mẹ tôi ngăn lại:<br/>
+                <br/>
+                - Con cứ ngồi nghỉ đi cho khỏe, giờ thấy trong người ra sao rồi?<br/>
+                <br/>
+                - Dạ con khỏe hẳn rồi, chỉ là… ngất một chút nên không sao! – Tiểu Mai cười lỏn lẻn.<br/>
+                <br/>
+                - Ừ, thật là… hai bác xin lỗi con, ngày đầu về Việt Nam mà đã bị vậy, thật… ngại! – Mẹ tôi thở dài. (hôm nay hình như người nhà tôi toàn thở dài, không thích thở như bình thường)<br/>
+                <br/>
+                Nói rồi bà đặt tay lên trán Tiểu Mai như xác nhận thêm một lần nữa rằng nàng vẫn khỏe, rồi mới tiếp lời:<br/>
+                <br/>
+                - Ổn rồi, không sao đâu!<br/>
+                <br/>
+                - Dạ, con cảm ơn bác! – Tiểu Mai lễ phép thưa, tôi để ý gò má nàng có đôi chút ửng hồng.<br/>
+                <br/>
+                Ngồi ở cạnh bên, ba tôi lúc này mới tằng hắng vài tiếng rồi nói:<br/>
+                <br/>
+                - Con… ăn gì chưa? Ăn chung với nhà bác luôn nhé?<br/>
+                <br/>
+                - Dạ không… con… dạ…! – Tiểu Mai từ chối theo phản xạ rồi cũng chợt nhận ra là mình bị hớ vì lúc chiều nàng theo về nhà tôi cũng là do tôi mời nàng cùng về ăn tối.<br/>
+                <br/>
+                - Ừm, con cứ ngồi nghỉ đi cho khỏe! – Nói rồi ba tôi đứng dậy, lấy tay dí vào đầu tôi và cố nói rõ to, nghe như có phần nào đó đang tự trách bản thân. – Cũng tại cái thằng này mà ảnh hưởng đến con, thật là… !!!<br/>
+                <br/>
+                Và ông lại gằn giọng tiếp lời, lần này là nói với tôi:<br/>
+                <br/>
+                - Đợi đó, ba xử mày sau! – Rồi ba tôi bước ra khỏi phòng, đi một mạch xuống nhà dưới.<br/>
+                <br/>
+                Tôi lại thở dài thêm lần nữa, đưa mắt sang nhìn Tiểu Mai thì trông thấy nàng cũng đang tủm tỉm.<br/>
+                <br/>
+                - Gì nữa? – Tôi thắc mắc.<br/>
+                <br/>
+                <br/>
+                <br/>
+                - Nhờ… em xỉu mà anh mới thoát nạn đó, lại cứu anh rồi..!! – Tiểu Mai khúc khích cười, quên cả luôn mẹ tôi đang ngồi bên cạnh.<br/>
+                <br/>
+                Và y như rằng không ngoài dự đoán của tôi:<br/>
+                <br/>
+                - Cái gì? Hai đứa… mấy con xưng hô nhau là gì? – Mẹ tôi ngạc nhiên, hết nhìn tôi lại quay sang nhìn Tiểu Mai.<br/>
+                <br/>
+                - …..!!<br/>
+                <br/>
+                - ………!!!<br/>
+                <br/>
+                Dĩ nhiên cả tôi và Tiểu Mai đều không dám nói thêm gì nữa, phần Tiểu Mai thì tôi không hiểu tại sao bình thường nàng vốn thông minh là thế, vậy mà hôm nay lại phạm phải lỗi… ngớ ngẩn quá chừng, cả gan xưng hô thân mật yêu đương trước mặt người lớn.<br/>
+                <br/>
+                Thế nhưng mẹ tôi lần này không mắng cũng không la, và cũng không có vẻ gì là cấm cản, bà chỉ lắc đầu nói:<br/>
+                <br/>
+                - Cũng không trách được, đúng là cha nào con nấy…!<br/>
+                <br/>
+                - Dạ…? – Tiểu Mai sửng sốt, tò mò hỏi.<br/>
+                <br/>
+                Rồi mẹ tôi quay sang nhìn tôi, bà như nửa cười nửa ngao ngán và nhìn Tiểu Mai tiếp lời:<br/>
+                <br/>
+                - Hồi còn trẻ, ba của thằng Nam cũng từng đón xe từ Phan Rang vào tận Sài Gòn, thuê một chiếc Honda 87 chỉ để chở bác đi dạo cuối tuần, rồi buổi tối lại ra tận đường lộ bắt xe trở về Phan Rang để sáng mai đi làm!<br/>
+                <br/>
+                - Woa… lãng mạn quá…! – Tiểu Mai xuýt xoa. – Vậy là giống hệt luôn….!<br/>
+                <br/>
+                - Chỉ khác là ba của nó không có nói láo gia đình! – Đến đây mẹ tôi lại lừ mắt, đưa tay như vờ đánh tôi. – Cái thằng… mày lớn đầu mà dốt!<br/>
+                <br/>
+                Tôi thì biết thân biết phận, ngậm bồ hòn làm ngọt mà im lặng là vàng.<br/>
+                <br/>
+                - À… mà làm sao bác trai biết được anh…à biết Nam nói dối vậy bác? – Tiểu Mai lại tò mò, không hiểu sao ở trước mặt mẹ tôi nàng lại đánh mất đi đâu vẻ lạnh lùng ít nói cố hữu.<br/>
+                <br/>
+                - Chuyện này, thật ra hai bác có biết nó nói láo đâu. Chỉ là tự nhiên có hai con bé đến nhà hỏi thăm thằng Nam, con bé Châu thì bác có biết qua vì cũng mua hoa ở nhà nó, còn bé… người nước ngoài kia thì bác không biết. Hai đứa đến hỏi bữa nay sao thằng Nam không tới phụ đạo dạy kèm nữa? – Mẹ tôi vừa kể vừa nhìn tôi đầy ý nhị.<br/>
+                <br/>
+                Rồi bà lại kể tiếp, lần này quay sang nhìn Tiểu Mai:<br/>
+                <br/>
+                - Lúc đó thì bác mới biết hóa ra trước giờ thằng Nam đi dạy kèm, chưa kịp nở mày nở mặt chút nào thì con bé Khả Vy gì đó nói là học cùng lớp, gọi điện rủ thằng Nam đi chơi!<br/>
+                <br/>
+                - ….! – Mẹ tôi vừa kể đến đây thì Tiểu Mai đã vụt mắt sang tôi, hàn khí tỏa ra tuy kín đáo mà như lạnh thấu tim tôi.<br/>
+                <br/>
+                - Lúc đó là ba thằng Nam nghe máy, mới nói là thằng Nam đi qua nhà ngoại thằng Chiến bạn trong lớp chơi cũng hai ngày rồi. Mà không biết sao ổng lại hỏi nhỏ Vy đó có biết gì về chuyện đi chơi này không, rồi bác thấy ổng gật gù chi đó. Vừa hay vài phút sau thằng Nam về chung với con, nên ba nó mới hỏi thử một câu thăm dò, và cái bản mặt lơ láo của nó cũng tự nói ra là nó nói xạo luôn rồi!<br/>
+                <br/>
+                Mẹ tôi kể đến đâu, tôi tá hỏa tam tinh đến đó. Hóa ra nói từ đầu đuôi cơ sự đến giờ thì là ba tôi thật sự chẳng biết hay xác nhận được là tôi nói láo vụ nhà ngoại thằng Chiến. Chỉ là ông thấy có hai nhỏ Uyển Nhi với Dạ Minh Châu đột ngột cùng đến tìm tôi, sau đó lại đến Khả Vy gọi điện sang, thế là ba tôi thấy nghi nghi sao đó nên mới chơi bài gài. Ngờ đâu gài trúng, tôi vừa về nhà đã bị bộ dạng hùng hổ của ba hù sợ hết xí quách, thế nên vẻ mặt hoảng hốt của tôi đã tự tố cáo tôi mất rồi.<br/>
+                <br/>
+                Tiểu Mai ngồi nghe cạnh bên mà cũng khúc khích cười rung cả người, rồi nàng mới nhìn tôi:<br/>
+                <br/>
+                - Giờ thì biết anh… à Nam, thông minh học giỏi là nhờ ai rồi nhe, hì hì!!!<br/>
+                <br/>
+                - Ờ…! – Tôi chán nản gật đầu, trăm phần chết nhục vì bị chết bởi chiêu “tâm lý chiến”.<br/>
+                <br/>
+                Mà ba tôi gài thế thì đằng nào cũng trúng, bạn bè gài còn có thể nghi ngờ mà phản pháo được, chứ xông tới ầm ầm như khủng long phun lửa giống ba tôi thì có khi tôi từ chẳng có tội cũng phải hoảng hốt nhận tội luôn ấy chứ.<br/>
+                <br/>
+                Trông Tiểu Mai cười đùa như vậy thì mẹ tôi cũng phần nào yên tâm hơn trước, bà đứng dậy định bước ra khỏi phòng nhưng nghĩ sao đó lại dừng bước và nói với Tiểu Mai:<br/>
+                <br/>
+                - Con vừa về Phan Thiết, mà vẫn đang ở một mình à?<br/>
+                <br/>
+                - Dạ, trước giờ con vẫn vậy…! – Nàng ngập ngừng đáp.<br/>
+                <br/>
+                - Là như vầy, bác vẫn chưa yên tâm lắm sau vụ khi nãy, với cả cũng một phần là do gia đình bác ảnh hưởng tới con, nên tối nay con sau khi ăn ở nhà bác xong thì để thằng Nam chở về nhà, con thu xếp quần áo đủ mặc khoảng một tuần mười ngày gì đó rồi qua nhà bác ở cũng được, nhé? – Mẹ tôi đưa ra lời đề nghị không thể nào tin được.<br/>
+                <br/>
+                - ….! – Tiểu Mai nhất thời không biết phải nói gì vì quá bất ngờ trước lời đề nghị hấp dẫn này.<br/>
+                <br/>
+                Chỉ có tôi là giãy nảy lên dù rằng trong lòng đang vô cùng sung sướng:<br/>
+                <br/>
+                - Ủa mẹ, nhà mình còn phòng nào nữa đâu?<br/>
+                <br/>
+                - Mày qua ngủ với thằng Phúc! – Mẹ tôi đáp gọn lỏn, giọng điệu quả quyết.<br/>
+                <br/>
+                Rồi bà lại quay sang Tiểu Mai, nhẹ giọng hỏi:<br/>
+                <br/>
+                - Con thấy sao? Xem như qua nhà bác chơi, dù gì cũng đang là hè!<br/>
+                <br/>
+                Ngập ngừng thêm ít giây nữa rồi Tiểu Mai cũng cười tươi như hoa, hệt như nàng vừa nãy chưa từng bị ngất:<br/>
+                <br/>
+                - Dạ được, con... xin nhờ bác!<br/>
+                <br/>
+                Và nàng cũng nhìn tôi cười mỉm, hệt như không thể tin được tình huống cân não vừa nãy lại diễn tiến theo hướng này, tốt đẹp đến mức chẳng thể hoàn hảo hơn được ít nhất là đối với hai đứa chúng tôi.<br/>
+                <br/>
+                Hôm đó, trong phòng có hai người nữ thì tôi đều muốn hét lên rằng tôi yêu cả hai người đó nhất trên đời này. Nhưng ngẫm đi nghĩ lại thì thấy đằng nào tôi cũng đã lớn nên lại thôi, vui vẻ phóng xuống nhà dưới rửa mặt để rồi lạnh gáy nhận ra ba tôi vẫn còn muốn xử tôi ghê lắm.<br/>
+                <br/>Đây gọi là tái ông mất ngựa chưa hẳn đã xui, sự đời xảo hợp khó lường, tôi cùng Tiểu Mai đoàn tụ vui vẻ để rồi nàng ngất ở nhà tôi, ấy là trong phúc có họa. Nhưng giờ đây Tiểu Mai lại được chính mẹ tôi mời sang ở cùng “một tuần mười ngày gì đó” thì chắc chắn là trong họa có phúc mất rồi, chính xác đứt đuôi con nòng nọc luôn chứ còn sao nữa!
+            </div>
+            <div class="container">
+                <div class="pagination">
+                    <button class="btn prev" disabled>‹ Trước</button>
+                    <button class="btn middle"><i class="fas fa-cog"></i></button>
+                    <button class="btn next">Sau ›</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="comment-section">
+            <h3>
+                <p style="font-size: 18px; color: #2f52b2;" href="#">
+                    <i class="fa-sharp fa-solid fa-list-ul"></i>
+                    <b>NHẬN XÉT CỦA ĐỘC GIẢ VỀ TRUYỆN [LÀM RUỘNG] KHÔNG CHO NỮ NHÂN NGỒI BÀN, ĐƯỢC, VẬY THÌ ĐỪNG ĂN!</b>
+                </p>
+            </h3>
+            
+            <textarea id="comment-box" placeholder="Nội dung bình luận tối thiểu 15 ký tự, tối đa 500 ký tự!"></textarea>
+            <p class="char-count">Số ký tự: <span id="char-count" style="color: #ea4c3c;">0</span></p>
+            <button type="submit"><i class="fa-sharp fa-solid fa-paper-plane"></i> Gửi</button>
+        
+            <div class="comments">
+                <div class="comment">
+                    <div class="user-info">
+                        <div class="avatar">TH</div>
+                        <div class="user-name">Trương Hằng</div>
+                        <div class="date">26/9/2024</div>
+                    </div>
+                    <div class="content">Chương 208. 208. 208</div>
+                    <div class="actions">
+                        <p><a class="reply" href="">Trả lời</a>|<a class="like" href=""><i class="fa-regular fa-thumbs-up"></i>Thích</a>.0</p>
+                    </div>
+                </div>
+        
+                <div class="comment">
+                    <div class="user-info">
+                        <div class="avatar">TH</div>
+                        <div class="user-name">Trương Hằng</div>
+                        <div class="date">25/9/2024</div>
+                    </div>
+                    <div class="content">Dịch lại truyện thấy mượt hơn rồi á dịch giả. Bữa vào đọc thấy dịch tùm lum nên k đọc. Nay quay lại đọc đã thấy rất OK rồi nè.</div>
+                    <div class="actions">
+                        <p><a class="reply" href="">Trả lời</a>|<a class="like" href=""><i class="fa-regular fa-thumbs-up"></i>Thích</a>.0</p>
+                    </div>
+                </div>
+        
+                <div class="comment">
+                    <div class="user-info">
+                        <div class="avatar">D</div>
+                        <div class="user-name">Duyen</div>
+                        <div class="date">19/9/2024</div>
+                    </div>
+                    <div class="content">103................</div>
+                    <div class="actions">
+                        <p><a class="reply" href="">Trả lời</a>|<a class="like" href=""><i class="fa-regular fa-thumbs-up"></i>Thích</a>.0</p>
+                    </div>
+                </div>
+        
+                <div class="comment comment-admin">
+                    <div class="user-info">
+                        <div class="avatar admin">Admin</div>
+                        <div class="user-name">Admin</div>
+                        <div class="date">19/9/2024</div>
+                    </div>
+                    <div class="content">Chân thành xin lỗi các bạn đọc, nhóm dịch có một số việc nên chậm trễ trong việc trả lời các bạn, web đã ktra lại có 1 số ch nhầm up sai các ch demo, web đang hối thúc nhóm up lại bảng hoàn chỉnh, mong các bạn thông cảm.</div>
+                    <div class="actions">
+                        <p><a class="reply" href="">Trả lời</a>|<a class="like" href=""><i class="fa-regular fa-thumbs-up"></i>Thích</a>.0</p>
+                    </div>
+                </div>
+        
+                
+                <div class="comment">
+                    <div class="user-info">
+                        <div class="avatar">HÁ</div>
+                        <div class="user-name">Hồng Ánh</div>
+                        <div class="date">17/9/2024</div>
+                    </div>
+                    <div class="content">Dịch k mượt, sai chính tả tùm lum. Loạn hết nên. Khuyên mn đừng nên đọc. Phí tiền lắm.</div>
+                    <div class="actions">
+                        <p><a class="reply" href="">Trả lời</a>|<a class="like" href=""><i class="fa-regular fa-thumbs-up"></i>Thích</a>.0</p>
+                    </div>
+                </div>
+        
+                <div class="comment comment-admin">
+                    <div class="user-info">
+                        <div class="avatar admin">ND</div>
+                        <div class="user-name">ND Thất Liên Hoa</div>
+                        <div class="date">19/9/2024</div>
+                    </div>
+                    <div class="content">Mình đã chỉnh sửa lại các lỗi à, vì mình copy nhầm nên up sai, bạn thông cảm nhé.</div>
+                    <div class="actions">
+                        <p><a class="reply" href="">Trả lời</a>|<a class="like" href=""><i class="fa-regular fa-thumbs-up"></i>Thích</a>.0</p>
+                    </div>
+                </div>
+        
+                <div class="comment">
+                    <div class="user-info">
+                        <div class="avatar">AN</div>
+                        <div class="user-name">An Nhĩên</div>
+                        <div class="date">17/9/2024</div>
+                    </div>
+                    <div class="content">Truyện này dịch đọc như good dịch ý. Khó hiểu kinh.</div>
+                    <div class="actions">
+                        <p><a class="reply" href="">Trả lời</a>|<a class="like" href=""><i class="fa-regular fa-thumbs-up"></i>Thích</a>.0</p>
+                    </div>
+                </div>
+        
+                <div class="comment comment-admin">
+                    <div class="user-info">
+                        <div class="avatar admin">ND</div>
+                        <div class="user-name">ND Thất Liên Hoa</div>
+                        <div class="date">19/9/2024</div>
+                    </div>
+                    <div class="content">Mình đã chỉnh sửa lại các lỗi à, vì mình copy nhầm nên up sai, bạn thông cảm nhé.</div>
+                    <div class="actions">
+                        <p><a class="reply" href="">Trả lời</a>|<a class="like" href=""><i class="fa-regular fa-thumbs-up"></i>Thích</a>.0</p>
+                    </div>
+                </div>
+        
+                <div class="comment">
+                    <div class="user-info">
+                        <div class="avatar">P</div>
+                        <div class="user-name">Pkieu123</div>
+                        <div class="date">16/9/2024</div>
+                    </div>
+                    <div class="content">Nhóm dịch TLH ơi, các bạn có gang dịch mượt hơn. Xíu được không. Bỏ tiền ra đọc truyện dịch mà y như đọc bản convert vậy. Các bạn không ngại thì người đọc cũng ngại dần đó. Vài bữa đầu dịch ổn nhưng càng về sau càng đọc không nổi luôn.</div>
+                    <div class="actions">
+                        <p><a class="reply" href="">Trả lời</a>|<a class="like" href=""><i class="fa-regular fa-thumbs-up"></i>Thích</a>.0</p>
+                    </div>
+                </div>
+        
+                <div class="comment comment-admin">
+                    <div class="user-info">
+                        <div class="avatar admin">ND</div>
+                        <div class="user-name">ND Thất Liên Hoa</div>
+                        <div class="date">19/9/2024</div>
+                    </div>
+                    <div class="content">Mình đã chỉnh sửa lại các lỗi à, vì mình copy nhầm nên up sai, bạn thông cảm nhé.</div>
+                    <div class="actions">
+                        <p><a class="reply" href="">Trả lời</a>|<a class="like" href=""><i class="fa-regular fa-thumbs-up"></i>Thích</a>.0</p>
+                    </div>
+                </div>
+                <li><a title="Xem Thêm">Xem Thêm</a><i class="fa-solid fa-angle-down"></i></li>
+            </div>
+            <script src="JS/slider1.js"></script>
+        </div>
+        
+        <div class="slider4">
+            <div class="fb-comments-section">
+                <ul>
+                    <li><p style="font-size: 18px; color: #2f52b2;"><i class="fa-solid fa-comment"></i><b> BÌNH LUẬN FACEBOOK </b></p></li>
+                    <hr>
+                </ul>
+                <div class="comment-container">
+                    <div class="comment-count">
+                        <strong>0 bình luận</strong>
+                    </div>
+                    <div class="comment-sort">
+                        <span>Sắp xếp theo</span>
+                        <select id="sort-comments" name="sort-comments">
+                            <option value="newest">Mới nhất</option>
+                            <option value="oldest">Cũ nhất</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="comment-box">
+                    <img src="image/user.jfif" alt="User Avatar">
+                    <input type="text" placeholder="Bình luận...">
+                </div>
+                <div class="fb-plugin-note">
+                    <a href="#"><i class="fab fa-facebook-square"></i> Plugin bình luận trên Facebook</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container-footer">
+            <div class="top-footer">
+                <h2>Top truyện nổi bật của tháng</h2>
+                <div class="top-links">
+                    <a title="" href="">diệp lạc vô tâm</a>
+                    <a title="" href="">hào môn kinh mộng</a>
+                    <a title="" href="">đấu la đại lục 2</a>
+                    <a title="" href="">đẹp trai là số 1</a>
+                    <a title="" href="">dam my</a>
+                    <a title="" href="">chồng tổng giám đốc sủng nhẹ một chút</a>
+                    <a title="" href="">đam mỹ hay</a>
+                    <a title="" href="">đep yeu 100</a>
+                    <a title="" href="">Vạn Cổ Thần Đế</a>
+                    <a title="" href="">toàn chức cao thủ</a>
+                </div>
+            </div>
+    
+            <div class="bottom-footer">
+                <div class="info-bottom-footer">
+                    <p>Website <a title="" href="">đọc truyện</a> online chất lượng hàng đầu việt nam, với nhiều 
+                    <a title="" href="">truyện tiên hiệp</a>, 
+                    <a title="" href="">truyện kiếm hiệp</a>,<br>
+                    <br>
+                    <a title="" href="">truyện ngôn tình</a>,
+                    <a title="" href="">truyện teen</a>, <a title="" href="">truyện đô thị</a>
+                    được tác giả và dịch giả chọn lọc và đăng tải. Truy cập<br> website nghĩa là bạn đã đồng ý với các quy định và điều khoản của chúng tôi. Vui lòng đọc kỹ các<br> thông tin liên quan ở phía dưới.</p>
+    
+                    <p class="copyright">Copyright 2021 <a title="" href="">DTruyen.Net</a></p>
+                </div>
+    
+                <div class="footer-links">
+                    <a title="" href="chinh-sach-bao-mat.html">Chính sách bảo mật</a> - 
+                    <a title="" href="dieu-khoan-su-dung.html">Điều khoản sử dụng</a> - 
+                    <a title="" href="quy-dinh-ve-noi-dung.html">Quy định về nội dung</a> - 
+                    <a title="" href="van-de-ban-quyen.html">Vấn đề bản quyền</a> - 
+                    <a title="" href="thoa-thuan-quyen-rieng-tu.html">Thỏa<br> thuận quyền riêng tư</a>
+                </div>
+              
+                <p class="license">Website hoạt động dưới <a  href="GPTC.html">Giấy phép truy cập mở Creative Commons Attribution 4.0 International</a></p>
+                <p class="license"> <a href="GPTC.html">License.</a>.
+                
+                <div class="dmca">
+                    <a href="//www.dmca.com/Protection/Status.aspx?id=9e37f4ab-db0f-4a15-a997-52948db76716" title="DMCA.com Protection Status" class="dmca-badge">
+                        <img src="//images.dmca.com/Badges/dmca-badge-w100-2x1-04.png?ID=//www.dmca.com/Protection/Status.aspx?id=9e37f4ab-db0f-4a15-a997-52948db76716" alt="DMCA.com Protection Status">
+                    </a>
+                    <script src="//images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
+                    <a href="https://creativecommons.org/licenses/by/4.0/" title="Second Logo">
+                        <img src="https://licensebuttons.net/l/by/3.0/80x15.png" alt="Second Logo" class="logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
